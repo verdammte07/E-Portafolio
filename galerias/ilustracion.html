@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDC PRODUCTIONS</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style/style.css">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="../style/css/all.min.css">
+    <script src="https://kit.fontawesome.com/e612888652.js"></script>
+    <!-- animate -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <link rel="icon" href="../images/LGO.png">
+
+</head>
+<body>
+    <div class="cajamenu">
+        <nav class="navbar">
+            <div class="contenido">
+                <div class="wow logo animate__animated animate__backInLeft" data-wow-duration="3.5s"><a href="#">Conectando tu creatividad</a></div>
+                <ul class="menu_lista">
+                    <div class="icon cancel-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <li class="wow animate_animated animate__backInRight" data-wow-duration="1s"><a href="../index.html">Inicio</a></li>
+                    <li class="wow animate_animated animate__backInRight" data-wow-duration="1.5s"><a href="../sobremi.html">Sobre mí</a></li>
+                    <li class="wow animate_animated animate__backInRight" data-wow-duration="2s"><a href="../habilidades.html">Habilidades</a></li>
+                    <li class="wow animate_animated animate__backInRight" data-wow-duration="2.5s"><a href="../portafolio.html">Portafolio</a></li>
+                    <li class="wow animate_animated animate__backInRight" data-wow-duration="3s"><a href="../contacto.html">Contacto</a></li>
+                    <div class="redesmenu">
+                        <a class="wow animate_animeted animate__rotateIn" data-wow-duration="3s" href="https://www.instagram.com/proxistod/" target="blank"><i class="fab fa-instagram"></i></a>
+                        <a class="wow animate_animeted animate__rotateIn" data-wow-duration="2s" href="https://www.linkedin.com/in/edwin-david-cifuentes-gonzalez-9151951b3/" target="blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="wow animate_animeted animate__rotateIn" data-wow-duration="1s" href="https://api.whatsapp.com/send?phone=3046830211&text=Hola" target="blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="stitch">
+                        <img src="../gift/stitch.gif" alt="">
+                    </div>
+                </ul>
+                <div class="icon menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </div>    
+
+    <section id="ilustracion" class="ventanas">
+        <div class="wow animate__animated animate__backInLeft contexto" data-wow-duration="2s">
+            <h1>Ilustración</h1>
+            <p>Lorem, ipsum dolor sit amet <b>consectetur</b> adipisicing elit. 
+                Nostrum repudiandae totam pariatur velit facere cumque! 
+                Quia cupiditate quis nulla commodi provident, quasi deleniti 
+                magni quo ab itaque explicabo, nostrum placeat!
+            </p>
+        </div>
+        <div class="galerias">
+            <div class=" wow animate__animated animate__backInDown col" data-wow-duration="3s">
+                <div class="gallery-box">
+                    <img src="../images/eve.jpg" id="gallery">
+                </div>
+            </div>
+            <div class="wow animate__animated animate__backInRight listagalery" data-wow-duration="2s">
+                <ul>
+                    <li class="btn active">01</li>
+                    <li class="btn">02</li>
+                    <li class="btn">03</li>
+                    <li class="btn">04</li>
+                    <li class="btn">05</li>
+                    <li class="btn">06</li>
+                    <li class="btn">07</li>
+                    <li class="btn">08</li>
+                    <li class="btn">09</li>
+                    <li class="btn">10</li>
+                    <li class="btn">11</li>
+                    <li class="btn">12</li>
+                    <li class="btn">13</li>
+                    <li class="btn">14</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="wow animate__animated animate__backInUp" data-wow-duration="3s">
+        <p>©...EDC PRODUCTIONS - DERECHOS RESERVADOS / 2020</p>
+        <div class="lineart"></div>
+    </footer>
+
+   
+    <!-- javascript -->
+    <script src="../js/app.js"></script>
+    <!-- WOW -->
+    <script src="http://wowjs.uk/dist/wow.min.js"></script>
+    <script type="text/javascript">
+		new WOW().init();
+    </script>
+    <!-- GALERIAS -->
+    <script>
+        var btn = document.getElementsByClassName("btn");
+        var gallery = document.getElementById("gallery");
+
+        var images = new Array(
+            "../images/eve.jpg",
+            "../images/chica demonio.jpg",
+            "../images/chica.jpg",
+            "../images/chibidemongirl.jpg",
+            "../images/baltazar.jpg",
+            "../images/demonio.jpg",
+            "../images/LA SOMBRERONA1.jpg",
+            "../images/forever.jpg",
+            "../images/retrato.jpg",
+            "../images/retrato2.jpg",
+            "../images/logo inverso.jpg",
+            "../images/hada.png",
+            "../images/libro.jpg",
+            "../images/4-elementos.jpg"
+        );
+
+        for(let i=0; i<btn.length; i++){
+            btn[i].onclick = function(){
+                gallery.src = images[i];
+                let current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace("active", "");
+                this.className += " active";
+            }
+        }
+    </script>
+</body>
+</html>

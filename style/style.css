@@ -1,0 +1,1288 @@
+/* Selector Universal: Para resetear estilos de la web */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+}
+/* ::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+} */
+::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+    background-color: rgb(60, 60, 60);
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(30, 30, 30);
+    border-radius: 10px;
+}
+::-webkit-scrollbar:hover{
+    background: rgb(100, 100, 100);
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient( rgba(255, 68, 0, .6), rgba(114, 0, 0, .6));
+}
+.cajamenu{
+    background-color: unset;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.contenido{
+    max-width: 100%;
+    background: unset;
+    margin: 10px auto;
+    padding: 0 10px;
+}
+.navbar{
+    background: rgb(60, 60, 60);
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    padding: 2  5px 0;
+    transition: all .5s ease;
+    border-radius: 0 0 5% 5%;
+}
+.navbar.sticky{
+    background: linear-gradient(rgb(100, 100, 100), rgb(40, 40, 40));
+    padding: 5px 0;
+}
+.navbar .contenido{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .menu_lista{
+    display: inline-flex;
+}
+.navbar .logo a{
+    color: orangered;
+    font-size: 1.5em;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: default;
+}
+.menu_lista li{
+    list-style: none;
+}
+.menu_lista li:hover{
+    background: -webkit-linear-gradient(left, rgba(255, 68, 0, .2), rgba(114, 0, 0, 0.8));
+    margin-left: 5px;
+}
+.menu_lista li a{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: all .2s ease;
+}
+.menu_lista li a:hover{
+    color: rgba(255, 68, 0, .9);
+    font-size: 17.5px;
+}
+.icon{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+.icon.cancel-btn{
+    border: solid 2px rgb(30, 30, 30);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    left: 85%;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.icon.cancel-btn:hover{
+    transform: scale(1.1);
+    color: brown;
+    border: solid 2px red;
+}
+.redesmenu{
+    display: none;
+}
+.stitch img{
+    display: none;
+}
+.ventanas{
+    background-color: unset;
+    width: 100%;
+    height: 100vh;
+}
+.contenedor{
+    background-color: teal;
+    width: 80%;
+    height: 50%;
+}
+/* INICIO */
+#inicio{
+    width: 100%;
+    height: 79.5vh;
+}
+.cajita1{
+    background-color: unset;
+    text-align: center;
+    width: 100%;
+    height: 70%;    
+}
+#inicio img{
+    position: absolute;
+    width: 18%;
+    top: 40px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+/* text animation */
+.textoinicio {
+    background: linear-gradient(rgba(255, 68, 0, .1), rgb(165, 42, 42, .5));
+    color: white;
+    width: 50%;
+    height: 80px;
+    margin: 50PX auto;
+    text-align: center;
+    font-size: 4em;
+    font-weight: 800;
+    border-radius: 5%;
+    border-bottom: solid 1px rgb(100, 100, 100);
+    border-top: solid 1px rgb(100, 100, 100);
+    overflow-y: hidden;
+    overflow-x: hidden;
+}  
+.textoinicio ul {     
+        list-style: none;
+        animation: cambiar 20s infinite ease;
+        text-align: center;
+}
+@keyframes cambiar {
+    0%{margin-top: 100px;}
+    100%{margin-top: -580px;}
+}
+.cajacolores1{
+    position: relative;
+    width: 2px;
+    height: 130%;
+    left: 10%;
+    top: 20px;
+    animation: 5s cajacolors infinite alternate;
+}
+.cajacolores2{
+    position: relative;
+    width: 2px;
+    height: 130%;
+    left: 90%;
+    top: -440px;
+    animation: 5s cajacolors infinite alternate;
+}
+@keyframes cajacolors{
+    0%{background: rgb(100, 100, 100);}
+    25%{background: rgb(40, 40, 40);}
+    50%{background: rgb(100, 100, 100);}
+    100%{background: rgb(40, 40, 40);}
+}
+/*CIERRE INICIO*/
+
+/* SOBRE MI */
+#sobremi{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.infosobremi{
+    color: white;
+    text-align: center;
+    width: 70vw;
+    overflow: auto;
+}
+.infosobremi p{
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 10px 50px;
+}
+.infosobremi h2{
+    font-size: 2em;
+    font-weight: 1000;
+    margin: 20px auto;
+}
+.infosobremi a{
+    border-bottom: solid 2px brown;
+    border-radius: 10%;
+    color: brown;
+    text-decoration: none;
+}
+.infosobremi a:hover{
+    color: rgba(255, 68, 0, .8);
+    border-bottom: solid 2px rgba(255, 68, 0, .8);
+}
+.infosobremi img{
+    background: -webkit-linear-gradient(45deg,rgb(60, 60, 60, .3), rgba(160, 160, 160, .0));
+    height: 380px;
+    float: left;
+    padding: 10px 20px;
+    margin: 40px 50px;
+    border-radius: 10%;
+    box-shadow: rgb(60, 60, 60) -6px 6px 2px;
+    perspective: 500px;
+    transition: ease .8s all;
+}
+.infosobremi img:hover{
+    background: -webkit-linear-gradient(45deg,rgb(60, 60, 60, .6), rgba(160, 160, 160, .0));
+    transform: scale(1.05) rotateY(15deg) rotateX(5deg);
+    box-shadow: rgb(60, 60, 60) -15px 15px 2px;
+}
+.cajagift{
+    background: linear-gradient( rgba(114, 0, 0, .0), rgba(255, 68, 0, .6));
+    border: solid 1px black;
+}
+.hobbies{
+    clear: both;
+    background-color:  rgb(100, 100, 100, .2);
+    box-shadow: rgb(80, 80, 80, .5) 0 -6px;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    display: inline-flex;
+    overflow: auto;
+}
+.hobbies h2{
+    margin: 60px 20px;
+}
+.cajagift img{
+    background-color: rgba(65, 11, 11, .2);
+    width: 60%;
+    height: auto;
+    text-align: unset;
+    float: unset;
+    margin: 0 30px;
+    border-radius: 50%;
+    box-shadow: gray 0 15px 20px;
+    border: solid 1px black;
+}
+.cajagift img:hover{
+    background-color: rgb(255, 244, 150);
+}
+.estudios{
+    background: linear-gradient( rgba(114, 0, 0, .2), rgba(255, 68, 0, .6));
+    width: 28vw;
+    height: 100vh;
+    text-align: center;
+    margin: 0 auto;
+    overflow-y: scroll;
+    border-radius: 10px 0 0 0;
+}
+.estudios h2{
+    color: white;
+    font-size: 2em;
+    font-weight: 1000;
+    margin: 20px auto;
+}
+.carton{
+    background-color: rgb(255, 250, 202);
+    width: 80%;
+    height: 160px;
+    margin: 5px auto;
+    border-radius: 2%;
+    border: double 7px rgb(200, 180, 0);
+    transition: all .5s ease;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.carton:hover{
+    width: 90%;
+    height: 200px;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+/* SOBRE MI - CIERRE */
+
+/* HABILIDADES */
+#habilidades{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: auto;
+}
+.wrapper{
+    width: 49%;
+    margin: 0 auto;
+}
+.wrapper:nth-child(1){
+    border-right: solid 2px rgba(255, 68, 0, .4);
+    border-radius: 20%;
+}
+.wrapper:nth-child(2){
+    border-left: solid 2px rgba(255, 68, 0, .4);
+    border-radius: 20%;
+}
+.wrapper h2{
+    text-align: center;
+    font-size: 3em;
+    padding: 0;
+    color: white;
+}
+.single-skill{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    margin: 26px auto;
+}
+.circlechart{
+    background: linear-gradient(rgba(255, 255, 255, .4), rgba(60, 60, 60, .9));
+    margin: 0 auto;
+    font-weight: 600;
+    border-radius: 50%;
+    box-shadow: rgb(60, 60, 60) -6px -4px 5px;
+}
+.cajaiconhabilitys img{
+    background: linear-gradient(rgba(255, 255, 255, .1), rgba(60, 60, 60, .8));
+    height: 80px;
+    margin: 5px auto;
+    border-radius: 50%;
+    padding: 6px;
+    transition: all .5s ease;
+    box-shadow: grey 0px 2px 20px;
+    -webkit-box-reflect: below 5px linear-gradient(transparent,transparent,#0006);
+}
+.cajaiconhabilitys img:hover{
+    transform: scale(1.1);
+    box-shadow: grey 0px 0px 0px;
+    -webkit-box-reflect: below 5px linear-gradient(transparent,transparent,#0002);
+}
+.cajaiconhabilitys{
+    margin: 0 auto;
+    width: 26%;
+    padding: 10px;
+}
+/* CIERRE HABILIDADES */
+
+/* PORTAFOLIO */
+#portafolio{
+    width: 100%;
+    height: 79vh;
+    display: flex;
+}
+.fotosgiro{
+    border-top: double 4px rgb(100, 100, 100, .5);
+    border-bottom: double 4px rgb(100, 100, 100, .5);
+    width: 50%;
+    height: auto;
+    margin: 10px;
+    border-radius: 150px;
+}
+.box{
+    background-image: url(../images/trival.png);
+    /* background: linear-gradient(rgba(255, 255, 255, .2), rgba(60, 60, 60, .2)); */
+    box-shadow: gray 0px 0px 50px;
+    border-radius: 50%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 180px;
+    height: 40vh;
+    margin: 80px auto;
+    /* padding: 100px 0; */
+    transform-style: preserve-3d;
+    animation: giro 30s linear infinite;
+}
+@keyframes giro{
+    0%{transform: perspective(0px) rotateY(0deg);}
+    0%{transform: perspective(0px) rotateY(360deg);}
+}
+.box span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--¡) * 45deg)) translateZ(250px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent,transparent,rgba(60, 60, 60, .4));
+}
+.box span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 350px;
+    object-fit: cover;
+}
+.accesogall{
+    width: 50%;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 20%;
+    border-right: double 4px rgb(60, 60, 60);
+}
+.accesogall li{
+    text-align: right;
+    list-style: none;
+    margin: 28px 0;
+}
+.accesogall ul li a{
+    background: linear-gradient(rgba(255, 255, 255, .0), rgba(60, 60, 60, .8));
+    color: white;
+    text-decoration: none;
+    border-radius: 2% 2% 30% 30%;
+    font-size: 3.5em;
+    font-weight: 600;
+    margin: 0 80px 0 0;
+    padding: 10px;
+    transition: all .2s ease-in;
+    box-shadow: rgb(60, 60, 60) 20px 5px 10px;
+}
+.accesogall ul li a:hover{
+    font-size: 5em;
+    font-weight: 900;
+    border-radius: 0 0 10% 10%;
+    color: rgba(255, 68, 0, .7);
+    box-shadow: rgba(255, 68, 0, .5) 0px 0px 8px;
+    background: linear-gradient( rgba(114, 0, 0, .4), rgba(255, 68, 0, .6));
+}
+/* CIERRE PORTAFOLIO */
+
+/* CONTACTO */
+#contacto{
+    width: 100%;
+    height: 79vh;
+    overflow: auto;
+    display: flex;
+}
+.cajacorreos{
+    width: 40%;
+    height: auto;
+    margin: 0 20px;
+    padding: 0 20px;
+}
+.cajacorreos h2{
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    margin: 20px auto;
+}
+.correos{
+    width: 100%;
+    padding: 20px 20px;
+    margin: 50px auto 20px auto;
+    border-radius: 15px;
+    border: solid 2px rgb(60, 60, 60);
+    box-shadow: rgb(60, 60, 60) -5px 5px;
+    transition: all 1.2s ease;
+}
+.correos:hover{
+    background: rgb(60, 60, 60, .6);
+    border: solid 2px white;
+    transform: scale(1.05) rotateY(0deg) rotateX(360deg);
+    box-shadow: rgb(60, 60, 60) 0px 0px 20px;
+}
+.correotext{
+    margin: 40px auto;
+    display: flex;
+    color: rgb(60, 60, 60);
+    transition: all 2s ease;
+}
+.correotext i{
+    font-size: 2em;
+    border: solid 2px rgb(60, 60, 60);
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 12px;
+    -webkit-box-reflect: below 0px linear-gradient(transparent,transparent, rgb(0, 0, 0));
+}
+.correotext p{
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 10px auto;
+    -webkit-box-reflect: below 0px linear-gradient(transparent,transparent, rgb(0, 0, 0));
+}
+.correotext:hover{
+    color: white;
+}
+.iconoscontacto{
+    width: 100%;
+    margin: 40px auto 0px auto;
+    text-align: center;
+    -webkit-box-reflect: below 0px linear-gradient(transparent,transparent, rgb(0, 0, 0));
+}
+.iconoscontacto a{
+    font-size: 2em;
+    color: rgb(60, 60, 60);
+    margin: 0 40px;
+    padding: 5px;
+    border-radius: 50%;
+    border: solid 1px rgb(60, 60, 60);
+    box-shadow: rgb(60, 60, 60) 0px 10px 10px;
+    transition: all .3s ease;
+}
+.iconoscontacto a:hover{
+    font-size: 2.5em;
+    background: unset;
+    color: white;
+    border: solid 0px white;
+    padding: 0px;
+    box-shadow: rgb(60, 60, 60) 0px 10px 50px;
+}
+.formulario{
+    width: 60%;
+    margin: 0 20px;
+    overflow: auto;
+}
+/* Contenedor barra de scroll para los textarea */
+/* textarea::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.2);
+	box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1) inset,
+	0 -1px 0 rgba(0, 0, 0, 0.1) inset;
+} */
+textarea {
+	height: 100px;
+	line-height: 20px;
+	resize: none;
+}
+/* Formulario de contacto */
+.form-contact {
+	margin: 0em auto;
+	max-width: 100%;
+	width: 500px;
+}
+/* Título formulario de contacto */
+.form-contact .title-form-contact {
+    color: white;
+    font-size: 1.8em;
+    font-weight: 800;
+	margin-bottom: 20px;
+	text-align: center;
+}
+/* Contenedor inputs formulario de contacto */
+.form-contact .ctn-inputs {
+	margin-bottom: 20px;
+	position: relative;
+}
+/* Contenedor inputs para los que van 2 en la misma columna formulario de contacto */
+.form-contact .ctn-middle {
+	display: inline-block;
+	margin-right: 10px;
+	width: calc(50% - 10px);
+}
+/* Estilo del autocompletar en los inputs formulario de contacto */
+/* .form-contact .ctn-inputs .effect-input:-webkit-autofill,
+.form-contact .ctn-inputs .effect-input:-webkit-autofill:hover,
+.form-contact .ctn-inputs .effect-input:-webkit-autofill:focus,
+.form-contact .ctn-inputs .effect-input:-webkit-autofill:active {
+	box-shadow: 0 0 0 1000px #f2f2f2 inset;
+} */
+/* Labels formulario de contacto */
+.form-contact .ctn-inputs .support-text-form-contact {
+    background-color: rgb(60, 60, 60, .5);
+    color: white;
+    width: 100%;
+    font-size: 12px;
+    padding: 5px;
+	pointer-events: none;
+	position: absolute;
+	transition: 0.3s ease all;
+    user-select: none;
+}
+/* Efecto labels cuando el input esta en estado focus o valido Formulario de contacto */
+/* .form-contact .ctn-inputs .support-text-form-contact.active-input-form-contact {
+	color: #505050;
+	font-size: 12px;
+	top: -20px;
+} */
+/* Inputs formulario contacto */
+.form-contact .ctn-inputs .effect-input {
+	background-color: rgba(255, 255, 255, 0.6);
+	border-style: none;
+	border-bottom: 1px solid rgb(60, 60, 60);
+	display: block;
+	letter-spacing: 1px;
+	padding: 3em 20px 0.5em 5px;
+    width: 100%;
+    border-radius: 2%;
+}
+/* .form-contact .ctn-inputs .effect-input.inline-block {
+	display: inline-block;
+} */
+/* Barra de los inputs para el efecto formulario de contacto */
+/* .form-contact .ctn-inputs .bar-input-effect:before {
+	content: '';
+	background-color: #000000;
+	bottom: 0;
+	height: 2px;
+	position: absolute;
+	transition: 0.3s ease all;
+	width: 0;
+} */
+/* .form-contact .ctn-inputs .bar-input-effect {
+	display: block;
+	position: relative;
+} */
+/* Input de los nombres */
+/* #contact_name_user_grupoamsi {
+	text-transform: capitalize;
+} */
+
+/* Estilos de los inputs del formulario de contacto cuando esten invalidos */
+/* .form-contact .ctn-inputs .validate-input:invalid {
+	border-bottom-color: #f53535;
+} */
+/* Estilos de la línea inferior sobre la que esta la letra de los inputs del formulario de contacto cuando esten invalidos */
+/* .form-contact .ctn-inputs .validate-input:invalid + .bar-input-effect:before {
+	background-color: #f53535;
+} */
+/* Efecto en la barra para cuando el input esta en estado focus o valido */
+/* .form-contact .ctn-inputs .bar-input-effect.active-input-form-contact:before {
+	width: 100%;
+} */
+/* Icono limpiar input formulario de contacto */
+.form-contact .ctn-inputs .bar-input-effect .clear-input-icon {
+	bottom: 1rem;
+	color: rgb(60, 60, 60);
+	cursor: pointer;
+	display: none;
+	font-size: 12px;
+	position: absolute;
+	right: 1%;
+}
+/* Efecto hover al icono de limpiar input formulario de contacto */
+/* .form-contact .ctn-inputs .bar-input-effect .clear-input-icon:hover,
+.form-contact .ctn-inputs .bar-input-effect .clear-input-icon:focus,
+.form-contact .ctn-inputs .bar-input-effect .clear-input-icon:active {
+	color: #4a4a4a;
+} */
+/* Icono limpiar input formulario de contacto cuando esten invalidos */
+/* .form-contact .ctn-inputs .validate-input:invalid + .bar-input-effect .clear-input-icon {
+	color: #f15555;
+} */
+/* Efecto hover al icono limpiar input formulario de contacto cuando esten invalidos */
+/* .form-contact .ctn-inputs .validate-input:invalid + .bar-input-effect .clear-input-icon:hover,
+.form-contact .ctn-inputs .validate-input:invalid + .bar-input-effect .clear-input-icon:focus,
+.form-contact .ctn-inputs .validate-input:invalid + .bar-input-effect .clear-input-icon:active {
+	color: #f14040;
+} */
+/* Texto indicativo del error del input */
+/* .form-contact .ctn-inputs .error-input-form-contact {
+	color: #f35252;
+	display: inline-block;
+	line-height: 15px;
+	position: relative;
+	top: 5px;
+} */
+.form-contact .ctn-btns-form-contact {
+	display: flex;
+	justify-content: space-around;
+}
+/* Botones Formulario */
+.btn-form-contact {
+	background-color: rgb(60, 60, 60);
+	border-radius: 2px;
+	border-style: none;
+	box-shadow: 5px 5px #202020;
+	color: #ffffff;
+	cursor: pointer;
+	padding: 10px 20px;
+    transition: 0.3s ease all;
+}
+/* Hover botón sección ayuda, botón formulario de contacto y botón de cerrar en el footer de los modales */
+/* .btn-form-contact:hover,
+.btn-form-contact:focus {
+	background-color: #5a5a5a;
+} */
+/* Efecto cuando dan click en el botón sección ayuda, botón formulario de contacto y botón de cerrar en el footer de los modales */
+.btn-form-contact:active {
+	box-shadow: 1px 0px #202020;
+	transform: translate(2px);
+}
+/* Animación de temblar de un lado a otro */
+/* .shake {
+	animation: shake 1s 1;
+} */
+/* Animación de los mensajes de error en el formulario de conctacto web contacto */
+/* @keyframes shake {
+	0%,
+	100% {
+		transform: translateZ(0px);
+	}
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translate3d(-10px, 0, 0);
+	}
+
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translate3d(10px, 0, 0);
+	}
+} */
+/* CIERRE CONTACTO */
+
+/* GALLERIAS */
+#programacion, #fotografia, #ilustracion, #edicion, #otros{
+    width: 100%;
+    height: 79vh;
+    display: flex;
+    overflow: auto;
+}
+.contexto{
+    background: linear-gradient(rgb(100, 100, 100, .0), rgb(60, 60, 60));
+    width: 38%;
+    height: auto;
+    padding: 20px;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    margin: 30px 50px;
+    box-shadow: rgb(60, 60, 60) -10px -10px;
+    overflow: auto;
+}
+.contexto h1{
+    font-size: 4em;
+    margin: 20px auto;
+    font-weight: 800;
+    -webkit-box-reflect: below 10px linear-gradient(transparent,transparent,rgba(60, 60, 60, .6));
+}
+.contexto p{
+    margin: 50px auto;
+    font-size: 1.4em;
+    font-weight: 500;
+    padding: 20px 0;
+    border-radius: 10%;
+    border-bottom: solid 2px rgba(255, 68, 0, .5);
+}
+.galerias{
+    width: 54%;
+    display: flex;
+    justify-content: center;
+}
+.gallery-box{
+    width: auto;
+    position: relative;
+    margin: 0 auto;
+    justify-content: center;
+}
+.gallery-box img{
+    height: 79vh;
+    border: double 5px rgb(60, 60, 60);
+    border-radius: 2%;
+    box-sizing: border-box;
+}
+.listagalery{
+    position: relative;
+    margin-left: 40px;
+}
+.listagalery ul{
+    background: linear-gradient(rgb(100, 100, 100, .2), rgb(60, 60, 60, .2));
+    position: relative;
+    /* right: 100px; */
+    top: 50%;
+    max-height: 60vh;
+    border-radius: 0 0 5% 5%;
+    border-left: solid 3px rgb(100, 100, 100);
+    border-right: solid 3px rgb(100, 100, 100);
+    overflow: auto;
+    transform: translateY(-50%);
+}
+.listagalery ul li{
+    color: white;
+    list-style: none;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 0 20px;
+    margin: 25px 0;
+    cursor: pointer;
+    position: relative;
+}
+.listagalery .active{
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: all .5s ease;
+}
+.listagalery ul li::after{
+    content: '';
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    top: -6px;
+    left: 16px;
+}
+.listagalery .active::after{
+    border: solid 2px white;
+    transition: all 1s ease;
+    background: rgb(60, 60, 60, .5);
+}
+/* GALERIA PROGRAMACION */
+.galprogramacion{
+    width: 56%;
+    overflow: auto;
+    justify-content: center;
+}
+/* .cajaprogrim{
+    background: violet;
+    width: 100%;
+    height: 50%;
+    border: solid 2px green;
+    display: flex;
+} */
+.galprogramacion a{
+    width: auto;
+    height: auto;
+    margin: 14px 8px;
+    color: white;
+    border-radius: 10px;
+    border: solid 1px white;
+    text-align: center;
+    text-decoration: unset;
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+    /* filter: grayscale(1); */
+}
+/* .galprogramacion a:hover{
+    filter: grayscale(0);
+    transition: all .5s ease-in;
+} */
+.galprogramacion h4{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 80px 10px;
+    opacity: 0;
+    font-size: 2em;
+    font-weight: 800;
+    transition: all .3s ease-in;
+}
+.galprogramacion h4:hover{
+    background: rgb(60, 60, 60, .6);
+    opacity: 1;
+}
+/* .galprogramacion p{
+    margin: 0 20px;
+    font-size: 1.1em;
+    font-weight: 500;
+} */
+.galprogramacion a:nth-child(1){
+    background: url(../fondos/trascendiendo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.galprogramacion a:nth-child(2){
+    background: url(../fondos/youtube.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.galprogramacion a:nth-child(3){
+    background: url(../fondos/yui.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.galprogramacion a:nth-child(4){
+    background: url(../fondos/javas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.galprogramacion a:nth-child(5){
+    background: url(../fondos/slambook.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.galprogramacion a:nth-child(6){
+    background: url(../fondos/maqueta.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.galprogramacion a:nth-child(7){
+    background: url(../fondos/clases.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* CIERRE GALERIAS */
+
+
+footer{
+    background: rgb(60, 60, 60);
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: rgb(80, 80, 80) 0 -10px;
+    padding: 20px 0;
+    color: white;
+    font-size: 12px;
+    font-weight: 800;
+    border-radius: 5% 5% 0 0;
+    
+}
+footer .lineart{
+    content: "";
+    width: 80%;
+    height: 2px;
+    margin: 2px auto;
+    animation: 5s coco infinite alternate;
+}
+@keyframes coco{
+    0%{background: brown;}
+    25%{background: orangered;}
+    50%{background: brown;}
+    100%{background: orangered;}
+}
+
+
+
+@media (max-width: 850px){
+    .cajamenu{
+        height: 40px;
+        margin-bottom: 10px;
+    }
+    .icon{
+        display: block;
+    }
+    .icon.hide{
+        display: none;
+    }
+    .contenido{
+        margin: 10px 0;
+    }
+    .navbar .menu_lista{
+        /* display: none; */
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        background: rgb(60, 60, 60);
+        border-right: solid 5px rgb(30, 30, 30);
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+        transition: all .5s ease;
+    }
+    .navbar .menu_lista.active{
+        left: 0%;
+    }
+    .navbar .menu_lista li{
+        margin-top: 5px;
+        padding: 20px;
+        border-top: solid 2px rgb(30, 30, 30);
+        border-bottom: solid 2px rgb(30, 30, 30);
+    }
+    .navbar .menu_lista li a{
+        font-size: 25px;
+    }
+    .navbar .logo a{
+        font-size: 1.2em;
+    }
+    .redesmenu{
+        display: flex;
+        height: 50px;
+        font-size: 2em;
+        margin: 20px auto;
+        justify-content: center;
+    }
+    .stitch img{
+        display: flex;
+        width: 30%;
+        margin: 0 auto;
+    }
+    .redesmenu a{
+        border: solid 2px rgb(30, 30, 30);
+        border-radius: 50%;
+        margin: auto;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: all .3s ease;
+        color: black;
+    }
+    .redesmenu a:hover{
+        background-color: gray;
+        transform: scale(1.2);
+        border: solid 2px white;
+    }
+    /* INICIO */
+    .cajacolores1{
+        display: none;
+    }
+    .cajacolores2{
+        display: none;
+    }
+    #inicio img{
+        width: auto;
+        height: 60%;
+    }
+    .textoinicio{
+        width: 80%;
+        height: 50px;
+        font-size: 2em;
+        font-weight: 600;
+        line-height: 40px;
+    }
+    .textoinicio ul {     
+        animation: cambiar2 20s infinite ease;
+    }
+    @keyframes cambiar2 {
+        0%{margin-top: -0px;}
+        100%{margin-top: -320px;}
+    }
+    /* CIERRE INICIO */
+    
+    /* SOBRE MI */
+    #sobremi{
+        display: inline-block;
+    }
+    .infosobremi{
+        width: 100vw;
+    }
+    .infosobremi img{
+        padding: 0;
+        margin: 40px 40px;
+    }
+    /* .hobbies{
+        display: inline-block;
+    } */
+    .cajagift img{
+        width: auto;
+        height: 40%;
+    }
+    .hobbies h2{
+        margin: 150px 20px;
+    }
+    .hobbies img{
+        width: 200px;
+    }
+    .estudios{
+        width: 100vw;
+        height: 60vh;
+    }
+    /* SOBRE MI - CIERRE */
+
+    /* HABILIDADES */
+    #habilidades{
+        display: inline-block;
+        height: auto;
+    }
+    .circlechart{
+        animation: none;
+        animation-timing-function: unset;
+        animation-delay: unset;
+        animation-iteration-count: unset;
+    }
+    .wrapper{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .cajaiconhabilitys{
+        width: 30%;
+    }
+    .cajaiconhabilitys img{
+        width: 50%;
+        height: auto;
+        padding: 1px;
+    }
+    .wrapper:nth-child(1){
+        border-right: solid 5px rgba(255, 68, 0, .4);
+        border-radius: 50%;
+    }
+    .wrapper:nth-child(2){
+        border-left: solid 5px rgba(255, 68, 0, .4);
+        border-radius: 50%;
+    }
+    /* CIERRE HABILIDADES */
+
+    /* PORTAFOLIO */
+    #portafolio{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+    }
+    .fotosgiro{
+        width: 1%;
+        height: 180px;
+        margin: 20px auto;
+        padding: 0;
+    }
+    .box{
+        background: linear-gradient(rgba(255, 255, 255, .5), rgba(60, 60, 60, .5));
+        width: 10px;
+        height: 3vh;
+        margin: 10px auto;
+        box-shadow: rgb(60, 60, 60) 0px -10px 5px;
+    }
+    .box span{
+        width: 100%;
+        height: 150px;
+        -webkit-box-reflect: unset;
+        transform: rotateY(calc(var(--¡) * 90deg)) translateZ(0px);
+    }
+    .box span img{
+        top: 10px;
+        width: 120px;
+        height: 180px;
+    }
+    .accesogall{
+        width: 100%;
+        height: auto;
+        margin: 50px auto auto 0px;
+        border: unset;
+    }
+    .accesogall li{
+        text-align: center;
+        list-style: none;
+        margin: 28px 0;
+    }
+    .accesogall ul li a{
+        font-size: 1.5em;
+        font-weight: 600;
+        margin: auto;
+        box-shadow: rgb(60, 60, 60) 0px -5px 4px;
+    }
+    .accesogall ul li a:hover{
+        font-size: 2.5em;
+    }
+    /* CIERRE PORTAFOLIO */
+    
+    /* CONTACTO */
+    #contacto{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+    }
+    .cajacorreos{
+        width: 100%;
+        height: auto;
+        margin: 20px auto;
+        padding: 0 20px;
+        border-top: solid 2px rgba(255, 68, 0, .4);
+    }
+    .cajacorreos p{
+        font-size: 1em;
+    }
+    .correotext{
+        display: inline-block;
+        text-align: center;
+        margin: 10px;
+    }
+    .iconoscontacto a{
+        margin: 0 20px;
+    }
+    .formulario{
+        width: 90%;
+        margin: auto;
+        padding: 0;
+        margin: 30px auto;
+    }
+    /* CIERRE CONTACTO */
+    
+    /* GALERIAS */
+    #programacion, #fotografia, #ilustracion, #edicion, #otros{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        overflow: auto;
+    }
+    .contexto{
+        background: linear-gradient(rgb(100, 100, 100, .0), rgb(60, 60, 60));
+        width: 90%;
+        height: auto;
+        padding: 0px;
+        margin: 20px auto;
+    }
+    .contexto h1{
+        font-size: 2.5em;
+        margin: 20px auto;
+    }
+    .contexto p{
+        font-size: 1em;
+        margin: 30px 20px;
+        padding: 20px;
+    }
+    .galerias{
+        width: 100%;
+        display: inline-block;
+    }
+    .gallery-box{
+        width: 90%;
+        position: relative;
+        margin: auto;
+    }
+    .gallery-box img{
+        width: 100%;
+        height: auto;
+        border: double 5px rgb(60, 60, 60);
+        border-radius: 2%;
+        box-sizing: border-box;
+    }
+    .listagalery{
+        margin: 20px 5px;
+    }
+    .listagalery ul{
+        right: 0px;
+        top: 0%;
+        height: auto;
+        display: flex;
+        border: solid 2px rgb(100, 100, 100);
+        transform: translateY(0%);
+    }
+    .listagalery ul li{
+        margin: 5px auto;
+        padding: 10px;
+    }
+    .listagalery ul li::after{
+        background: transparent;
+        width: 2px;
+        height: 10px;
+        border-radius: 0 0 50% 50%;
+        top: -6px;
+        left: 20px;
+    }
+    .listagalery .active::after{
+        border: solid 1px rgb(60, 60, 60);
+        transition: all 1s ease;
+        background: rgb(60, 60, 60);
+    }
+    .galprogramacion{
+        width: 100%;
+        overflow: auto;
+    }
+    .galprogramacion a{
+        width: auto;
+        height: auto;
+        margin: 10px 3px;
+    }
+    .galprogramacion h4{
+        padding: 80px 0;
+        font-size: 1.4em;
+        font-weight: 800;
+    }
+    /* CIERRE GALERIAS */
+    footer p{
+        font-size: 10px;
+        font-weight: 600;
+    }
+}

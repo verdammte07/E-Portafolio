@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDC PRODUCTIONS</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="style/css/all.min.css">
+    <script src="https://kit.fontawesome.com/e612888652.js"></script>
+    <!-- animate -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <link rel="icon" href="images/LGO.png">
+
+</head>
+<body>
+    <div class="cajamenu">
+        <nav class="navbar">
+            <div class="contenido">
+                <div class="wow logo animate__animated animate__backInLeft" data-wow-duration="3.5s"><a href="#">Conectando tu creatividad</a></div>
+                <ul class="menu_lista">
+                    <div class="icon cancel-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <li class="wow animate_animated animate__backInRight" data-wow-duration="1s"><a href="./index.html">Inicio</a></li>
+                    <li class="wow animate_animated animate__backInRight" data-wow-duration="1.5s"><a href="./sobremi.html">Sobre mí</a></li>
+                    <li class="wow animate_animated animate__backInRight" data-wow-duration="2s"><a href="./habilidades.html">Habilidades</a></li>
+                    <li class="wow animate_animated animate__backInRight" data-wow-duration="2.5s"><a href="./portafolio.html">Portafolio</a></li>
+                    <li class="wow animate_animated animate__backInRight" data-wow-duration="3s"><a href="./contacto.html">Contacto</a></li>
+                    <div class="redesmenu">
+                        <a class="wow animate_animeted animate__rotateIn" data-wow-duration="3s" href="https://www.instagram.com/proxistod/" target="blank"><i class="fab fa-instagram"></i></a>
+                        <a class="wow animate_animeted animate__rotateIn" data-wow-duration="2s" href="https://www.linkedin.com/in/edwin-david-cifuentes-gonzalez-9151951b3/" target="blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="wow animate_animeted animate__rotateIn" data-wow-duration="1s" href="https://api.whatsapp.com/send?phone=3046830211&text=Hola" target="blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="stitch">
+                        <img src="gift/stitch.gif" alt="">
+                    </div>
+                </ul>
+                <div class="icon menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </div>   
+
+    <section id="contacto" class="ventanas">
+            <div class="wow animate__animated animate__backInLeft formulario" data-wow-duration="2s">
+                <form action="?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post" id="contact_user_grupoamsi" class="form-contact" autocomplete="off" accept-charset="utf-8">
+                    <h3 class="title-form-contact">
+                        Escríbeme y pronto me contactare con tigo.
+                    </h3>
+                    <div class="ctn-inputs">
+                        <label for="contact_name_user_grupoamsi" class="support-text-form-contact">
+                            Nombre:
+                        </label>
+                        <input type="text" name="contact_name_user_grupoamsi" id="contact_name_user_grupoamsi" class=" effect-input" minlength="2" maxlength="100" autocomplete="on" required="required">
+                        <span class="bar-input-effect">
+                            <i class="fas fa-times clear-input-icon" aria-hidden="true"></i>
+                        </span>
+                        <p id="field-names" class="error-input-form-contact"></p>
+                    </div>
+                    <div class="ctn-inputs">
+                        <label for="contact_email_user_grupoamsi" class="support-text-form-contact">
+                            Email:
+                        </label>
+                        <input type="email" name="contact_email_user_grupoamsi" id="contact_email_user_grupoamsi" class=" effect-input" minlength="6" maxlength="100" autocomplete="on" required="required">
+                        <span class="bar-input-effect">
+                            <i class="fas fa-times clear-input-icon" aria-hidden="true"></i>
+                        </span>
+                        <p id="field-email" class="error-input-form-contact"></p>
+                    </div>
+                    <div class="ctn-inputs ctn-middle">
+                        <label for="contact_tel_user_grupoamsi" class="support-text-form-contact">
+                            Teléfono:
+                        </label>
+                        <input type="tel" name="contact_tel_user_grupoamsi" id="contact_tel_user_grupoamsi" class="inline-block effect-input" min="2000000" max="3500000000" minlength="7" maxlength="11" autocomplete="on">
+                        <span class="bar-input-effect">
+                            <i class="fas fa-times clear-input-icon" aria-hidden="true"></i>
+                        </span>
+                        <p id="field-tel" class="error-input-form-contact"></p>
+                    </div>
+                    <div class="ctn-inputs">
+                        <label for="contact_comments_user_grupoamsi" class="support-text-form-contact">
+                            Mensaje:
+                        </label>
+                
+                        <textarea name="contact_comments_user_grupoamsi" id="contact_comments_user_grupoamsi" class=" effect-input" minlength="5" maxlength="800" autocomplete="off" required="required"></textarea>
+                        <span class="bar-input-effect">
+                            <i class="fas fa-times clear-input-icon" aria-hidden="true"></i>
+                        </span>
+                        <p id="field-comments" class="error-input-form-contact"></p>
+                    </div>
+                
+                    <div class="ctn-btns-form-contact">
+                        <input type="reset" id="clear_contact_user_grupoamsi" name="clear_contact_user_grupoamsi" class="btn-form-contact" value="Limpiar">
+                        <input type="submit" id="send_contact_user_grupoamsi" name="send_contact_user_grupoamsi" class="btn-form-contact" value="Enviar">
+                    </div>
+                </form>
+            </div>
+
+            <div class="cajacorreos">
+                <h2>Información</h2>
+                <div class="wow animate__animated animate__backInDown correos" data-wow-duration="3s">
+                    <div class="correotext">
+                        <i class="wow animate__animated animate__pulse far fa-envelope gmail"></i>
+                        <p>verdammtestodos@gmail.com</p>
+                    </div>
+                    <div class="correotext">
+                        <i class="wow animate__animated animate__pulse far fa-envelope gmail"></i>
+                        <p>edcifuentes10@misena.edw.co</p>
+                    </div>
+                </div>
+                <div class="iconoscontacto">
+                    <a class="wow animate_animeted animate__rotateIn" data-wow-duration="5s" href="https://www.instagram.com/proxistod/" target="blank"><i class="fab fa-instagram"></i></a>
+                    <a class="wow animate_animeted animate__rotateIn" data-wow-duration="5s" href="https://www.linkedin.com/in/edwin-david-cifuentes-gonzalez-9151951b3/" target="blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="wow animate_animeted animate__rotateIn" data-wow-duration="5s" href="https://api.whatsapp.com/send?phone=3046830211&text=Hola" target="blank"><i class="fab fa-whatsapp"></i></a>                
+                </div>
+            </div>
+    </section>
+
+
+    <footer class="wow animate__animated animate__backInUp" data-wow-duration="3s">
+        <p>©...EDC PRODUCTIONS - DERECHOS RESERVADOS / 2020</p>
+        <div class="lineart"></div>
+    </footer>
+
+   
+    <!-- javascript -->
+    <script src="js/app.js"></script>
+    <!-- WOW -->
+    <script src="http://wowjs.uk/dist/wow.min.js"></script>
+    <script type="text/javascript">
+		new WOW().init();
+	</script>
+</body>
+</html>
